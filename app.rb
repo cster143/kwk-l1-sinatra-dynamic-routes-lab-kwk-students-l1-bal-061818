@@ -9,7 +9,6 @@ class App < Sinatra::Base
     num1=params[:number].to_i
     (num1*num1).to_s
   end
-  get '/say/:number/:phrase' do
 
   end
   get '/:operation/:number1/:number2' do
