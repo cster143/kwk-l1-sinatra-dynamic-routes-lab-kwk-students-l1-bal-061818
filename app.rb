@@ -25,5 +25,9 @@ class App < Sinatra::Base
   get '/:operation/:number1/:number2' do
     nm1=params[:number1]
     nm2=params[:number2]
+    (nm1+nm2).to_i
+    (nm1-nm2).to_i
+    (nm1*nm2).to_i
+    (nm1/nm2).to_i
   end
 end
