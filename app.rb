@@ -32,9 +32,12 @@ class App < Sinatra::Base
     elsif @operation == "subract"
       @number1 - @number2
     elsif @operation == "multiply"
-      @number1*@number2
+      @number1 * @number2
     else
-      @number1
+      @number1 / @number2
+    end
+  end
+end
 
 
 
