@@ -12,6 +12,7 @@ class App < Sinatra::Base
   get '/say/:number/:phrase' do
     @nmb=params[:number].to_i
     @phr=params[:phrase].to_s
+    "#{nmb}#{phr}"
   end
   get '/say/:word1/:word2/:word3/:word4/:word5' do
     @w1=params[:word1]
@@ -21,3 +22,4 @@ class App < Sinatra::Base
     @w5=params[:word5]
     "#{w1}#{w2}#{w3}#{w4}#{w5}"
   end
+end
