@@ -10,7 +10,7 @@ class App < Sinatra::Base
     (num1*num1).to_s
   end
   get '/say/:number/:phrase' do
-    @nmb=params[:number].to_i
+    @nmb=params[:number].to_s
     @phr=params[:phrase].to_s
     "#{nmb}#{phr}"
   end
